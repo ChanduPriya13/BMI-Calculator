@@ -1,0 +1,23 @@
+#CODE: BMI CALCULATOR 
+
+height = float(input("Enter your height m:"))
+weight = float(input("Enter your weight in kg:"))
+BMI = round(weight / height ** 2)
+if BMI < 18.5:
+  print("You are %d you are underweight" %(BMI))
+  # print("Your BMI is {BMI}, you are underweight" %(BMI))
+elif BMI < 25:
+  # 18.5 >= BMI < 25
+  print("You are %d you are normal weight" %(BMI))
+  # print("Your BMI is {BMI}, you are normal weight" %(BMI))
+elif BMI < 30:
+  #30 >= BMI < 30
+  print("You are %d you are slightly overweight" %(BMI))
+  # print("Your BMI is {BMI}, you are overweight" %(BMI))
+elif BMI < 35:
+  # 30 >= BMI < 35
+  print("You are %d you are obese" %(BMI))
+  # print("Your BMI is {BMI}, you are obese" %(BMI))
+else:
+  print("You are %d you are clinically obese" %(BMI))
+  # print("Your BMI is {BMI}, you are clinically obese" %(BMI))
